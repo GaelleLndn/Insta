@@ -1,0 +1,41 @@
+                         /*section for full navbar*/
+.navbar-default {
+height: 80px;
+}
+                      /*end of section full navbar*/
+
+                   /*start section for first instagram logo & text*/
+.navbar-header {
+font-size: 35px;
+padding-left: 100px;
+margin-top: 10px;
+
+}
+.text {
+  font-family: 'Satisfy', cursive;
+  font-size: 35px;
+margin-top: 10px;
+
+}
+                 /*end section for first instagram logo & text*/
+                /*start section for searchbox*/
+.input-group {
+padding-left: 150px;
+margin-top: 10px;
+}
+            /*end of searchbox*/
+             /*last 3 logos*/
+.logo1 {
+  font-size: 20px;
+  padding-left: 300px;
+}
+.logo2 {
+  font-size: 20px;
+  padding-left: 30px;
+
+}
+.logo3 {
+  font-size: 20px;
+  padding-left: 30px;
+color: black;
+}

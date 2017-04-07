@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accueil</title>
+  <meta charset="utf8">	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  
+</head>
+
+<body style="background-color:#F4F4F4;">
+
+
+ <nav>
+    <div class="navbar_all ">
+      
+      <div class="nav-top-left">
+          <div class="logo">
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="brand">
+            <a href="#"><div class="text">Instagram</div></a>
+          </div>
+      </div>    
+      
+      <div class="search">
+        <input type="text" class="form-control" placeholder="Rechercher">
+      </div>
+
+      <div class="nav-top-right">
+          <div class="nav_item_1">
+            <a class="logo1" href=""><i class="fa fa-superpowers" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="nav_item_2">
+            <a class="logo2" href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="nav_item_3">
+            <a class="logo3" href=""><i class="fa fa-user-o" aria-hidden="true"></i></a>
+          </div>
+      </div>
+    </div>
+ </nav>
+
+
+  <div class="container-fluid" style="background-color:#F4F4F4;">
+    <div class="row">
+       <div class="col-sm-offset-4 col-sm-4 centre">
+          
+          <div class="row">
+            <div class="col-sm-12 profil-titre">
+             <img src="img/pastille.jpeg" width="40" height="40" style="padding-left:10px; padding-top:10px;">
+              <strong><a href="6_instagram/indexAV.html"><p style="padding-left:10px; padding-top:20px;">Un_profil-123</p></a></strong>
+            </div> 
+          </div>
+
+          <div class="row photo_1">
+          </div> 
+
+          <div class="row">
+            <div class="col-sm-12 comm">
+              <div class="iconsCoeurChat">
+                  <div id="coeurs">
+                      <i class="fa fa-heart-o coeur" aria-hidden="true"></i>
+                  </div> 
+                  <i class="fa fa-comment-o chat" aria-hidden="true"></i>
+              </div> 
+                
+                <strong><p style="padding-left:10px; padding-top:5px;">151 vues</p></strong>
+                
+                <p style="padding-left:10px; padding-top:5px;">
+                Whoauou la photo de ouf!
+                </p>
+                
+                <div class="list"></div>
+                <p style="padding-left:10px; padding-top:5px; font-size:10px;">
+               IL Y A 45 JOURS</p>
+                  <hr>
+                <div class="commentaires">
+                     <form id="comments" onsubmit="return false">
+                     <input  class="comment-aires" type='text' name='input' placeholder="Ajouter un commentaire"></input>
+                     </form>
+                      <img src="img/points.png">
+                </div>
+            </div>
+          </div>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+  $(function(){
+    $('#comments').submit(function() {
+      var answer = $("input[name=input]").val();
+      $('.list').append('<div class="item" style="padding-left:10px;">' + answer + '</div>');
+      $("input").val('');
+    });
+
+    $( '.coeur' ).click(function() {
+      $(this).toggleClass("coeur-rouge");
+      $(this).toggleClass("fa-heart");
+      $(this).toggleClass("fa-heart-o");
+    });
+
+    
+
+       
+  });
+</script>
+
+</body>
+
+
+</html>
